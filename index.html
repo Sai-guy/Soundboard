@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  </head>
+
+  <script>
+    var qSound = new Audio();
+    qSound.src = 'qSound.mp3';  
+
+    var wSound = new Audio();
+    wSound.src = 'wSound.mp3';
+
+    var eSound = new Audio();
+    eSound.src = 'eSound.mp3';
+
+    var rSound = new Audio();
+    rSound.src = 'rSound.mp3';
+
+    var tSound = new Audio();
+    tSound.src = 'tSound.mp3';
+
+    var ySound = new Audio();
+    ySound.src = 'ySound.mp3';
+
+    var aSound = new Audio();
+    aSound.src = 'aSound.mp3';
+
+    var sSound = new Audio();
+    sSound.src = 'sSound.mp3';
+
+    var dSound = new Audio();
+    dSound.src = 'dSound.mp3';
+
+    var fSound = new Audio();
+    fSound.src = 'fSound.mp3';
+
+    var gSound = new Audio();
+    gSound.src = 'gSound.mp3';
+
+    var hSound = new Audio();
+    hSound.src = 'hSound.mp3';
+
+    var zSound = new Audio();
+    zSound.src = 'zSound.mp3';
+
+    var xSound = new Audio();
+    xSound.src = 'xSound.mp3';
+
+    var cSound = new Audio();
+    cSound.src = 'cSound.mp3';
+
+    var vSound = new Audio();
+    vSound.src = 'vSound.mp3';
+
+    var bSound = new Audio();
+    bSound.src = 'bSound.mp3';
+
+    var nSound = new Audio();
+    nSound.src = 'nSound.mp3';
+
+
+    const log = document.getElementById('log');
+//Q
+    function qChange() {
+      var q = document.getElementById("Q");
+      q.style.backgroundColor = "white";
+      q.style.color = "#12131C";
+      q.style.boxShadow = "0px 0px 50px #FF0000";
+    } 
+    function qChange2() {
+      var q = document.getElementById("Q");
+      q.style.backgroundColor = "#12131C";
+      q.style.color = "white";
+      q.style.boxShadow = "0px 0px 0px black";
+    } 
+//W
+    function wChange() {
+      var w = document.getElementById("W");
+      w.style.backgroundColor = "white";
+      w.style.color = "#12131C";
+      w.style.boxShadow = "0px 0px 50px #FF2100";
+    } 
+    function wChange2() {
+      var w = document.getElementById("W");
+      w.style.backgroundColor = "#12131C";
+      w.style.color = "white";
+      w.style.boxShadow = "0px 0px 0px black";
+    } 
+//E
+    function eChange() {
+      var e = document.getElementById("E");
+      e.style.backgroundColor = "white";
+      e.style.color = "#12131C";
+      e.style.boxShadow = "0px 0px 50px #FF5501";
+    } 
+    function eChange2() {
+      var e = document.getElementById("E");
+      e.style.backgroundColor = "#12131C";
+      e.style.color = "white";
+      e.style.boxShadow = "0px 0px 0px black";
+    } 
+//R
+    function rChange() {
+      var r = document.getElementById("R");
+      r.style.backgroundColor = "white";
+      r.style.color = "#12131C";
+      r.style.boxShadow = "0px 0px 50px #FF8600";
+    } 
+    function rChange2() {
+      var r = document.getElementById("R");
+      r.style.backgroundColor = "#12131C";
+      r.style.color = "white";
+      r.style.boxShadow = "0px 0px 0px black";
+    } 
+//T
+    function tChange() {
+      var t = document.getElementById("T");
+      t.style.backgroundColor = "white";
+      t.style.color = "#12131C";
+      t.style.boxShadow = "0px 0px 50px #FFBA01";
+    } 
+    function tChange2() {
+      var t = document.getElementById("T");
+      t.style.backgroundColor = "#12131C";
+      t.style.color = "white";
+      t.style.boxShadow = "0px 0px 0px black";
+    } 
+//Y
+    function yChange() {
+      var y = document.getElementById("Y");
+      y.style.backgroundColor = "white";
+      y.style.color = "#12131C";
+      y.style.boxShadow = "0px 0px 50px #FFCC00";
+    } 
+    function yChange2() {
+      var y = document.getElementById("Y");
+      y.style.backgroundColor = "#12131C";
+      y.style.color = "white";
+      y.style.boxShadow = "0px 0px 0px black";
+    } 
+//A
+    function aChange() {
+      var a = document.getElementById("A");
+      a.style.backgroundColor = "white";
+      a.style.color = "#12131C";
+      a.style.boxShadow = "0px 0px 50px #FF4D01";
+    } 
+    function aChange2() {
+      var a = document.getElementById("A");
+      a.style.backgroundColor = "#12131C";
+      a.style.color = "white";
+      a.style.boxShadow = "0px 0px 0px black";
+    } 
+//S
+    function sChange() {
+      var s = document.getElementById("S");
+      s.style.backgroundColor = "white";
+      s.style.color = "#12131C";
+      s.style.boxShadow = "0px 0px 50px #E23B3D";
+    } 
+    function sChange2() {
+      var s = document.getElementById("S");
+      s.style.backgroundColor = "#12131C";
+      s.style.color = "white";
+      s.style.boxShadow = "0px 0px 0px black";
+    } 
+//D
+    function dChange() {
+      var d = document.getElementById("D");
+      d.style.backgroundColor = "white";
+      d.style.color = "#12131C";
+      d.style.boxShadow = "0px 0px 50px #CB2C6D";
+    } 
+    function dChange2() {
+      var d = document.getElementById("D");
+      d.style.backgroundColor = "#12131C";
+      d.style.color = "white";
+      d.style.boxShadow = "0px 0px 0px black";
+    } 
+//F
+    function fChange() {
+      var f = document.getElementById("F");
+      f.style.backgroundColor = "white";
+      f.style.color = "#12131C";
+      f.style.boxShadow = "0px 0px 50px #B21DA0";
+    } 
+    function fChange2() {
+      var f = document.getElementById("F");
+      f.style.backgroundColor = "#12131C";
+      f.style.color = "white";
+      f.style.boxShadow = "0px 0px 0px black";
+    } 
+//G
+    function gChange() {
+      var g = document.getElementById("G");
+      g.style.backgroundColor = "white";
+      g.style.color = "#12131C";
+      g.style.boxShadow = "0px 0px 50px #980DD5";
+    } 
+    function gChange2() {
+      var g = document.getElementById("G");
+      g.style.backgroundColor = "#12131C";
+      g.style.color = "white";
+      g.style.boxShadow = "0px 0px 0px black";
+    } 
+//H
+    function hChange() {
+      var h = document.getElementById("H");
+      h.style.backgroundColor = "white";
+      h.style.color = "#12131C";
+      h.style.boxShadow = "0px 0px 50px #8400FF";
+    } 
+    function hChange2() {
+      var h = document.getElementById("H");
+      h.style.backgroundColor = "#12131C";
+      h.style.color = "white";
+      h.style.boxShadow = "0px 0px 0px black";
+    } 
+//Z
+    function zChange() {
+      var z = document.getElementById("Z");
+      z.style.backgroundColor = "white";
+      z.style.color = "#12131C";
+      z.style.boxShadow = "0px 0px 50px #08F10F";
+    } 
+    function zChange2() {
+      var z = document.getElementById("Z");
+      z.style.backgroundColor = "#12131C";
+      z.style.color = "white";
+      z.style.boxShadow = "0px 0px 0px black";
+    } 
+//X
+    function xChange() {
+      var x = document.getElementById("X");
+      x.style.backgroundColor = "white";
+      x.style.color = "#12131C";
+      x.style.boxShadow = "0px 0px 50px #06BF44";
+    } 
+    function xChange2() {
+      var x = document.getElementById("X");
+      x.style.backgroundColor = "#12131C";
+      x.style.color = "white";
+      x.style.boxShadow = "0px 0px 0px black";
+    } 
+//C
+    function cChange() {
+      var c = document.getElementById("C");
+      c.style.backgroundColor = "white";
+      c.style.color = "#12131C";
+      c.style.boxShadow = "0px 0px 50px #059075";
+    } 
+    function cChange2() {
+      var c = document.getElementById("C");
+      c.style.backgroundColor = "#12131C";
+      c.style.color = "white";
+      c.style.boxShadow = "0px 0px 0px black";
+    } 
+//V
+    function vChange() {
+      var v = document.getElementById("V");
+      v.style.backgroundColor = "white";
+      v.style.color = "#12131C";
+      v.style.boxShadow = "0px 0px 50px #0365A2";
+    } 
+    function vChange2() {
+      var v = document.getElementById("V");
+      v.style.backgroundColor = "#12131C";
+      v.style.color = "white";
+      v.style.boxShadow = "0px 0px 0px black";
+    } 
+//B
+    function bChange() {
+      var b = document.getElementById("B");
+      b.style.backgroundColor = "white";
+      b.style.color = "#12131C";
+      b.style.boxShadow = "0px 0px 50px #0135D5";
+    } 
+    function bChange2() {
+      var b = document.getElementById("B");
+      b.style.backgroundColor = "#12131C";
+      b.style.color = "white";
+      b.style.boxShadow = "0px 0px 0px black";
+    } 
+//N
+    function nChange() {
+      var n = document.getElementById("N");
+      n.style.backgroundColor = "white";
+      n.style.color = "#12131C";
+      n.style.boxShadow = "0px 0px 50px #000DFF";
+    } 
+    function nChange2() {
+      var n = document.getElementById("N");
+      n.style.backgroundColor = "#12131C";
+      n.style.color = "white";
+      n.style.boxShadow = "0px 0px 0px black";
+    } 
+
+
+
+
+
+
+    document.addEventListener('keypress', logKey);
+        function logKey(e) {
+      if ( e.code == "KeyQ"){
+        qSound.play();
+        
+      } else if( e.code == "KeyW" ){
+        wSound.play();
+
+      } else if( e.code == "KeyE" ){
+        eSound.play();
+
+      } else if( e.code == "KeyR" ){
+        rSound.play();
+
+      } else if( e.code == "KeyT" ){
+        tSound.play();
+
+      } else if( e.code == "KeyY" ){
+        ySound.play();
+
+      } else if( e.code == "KeyA" ){
+        aSound.play();
+
+      } else if( e.code == "KeyS" ){
+        sSound.play();
+
+      } else if( e.code == "KeyD" ){
+        dSound.play();
+
+      } else if( e.code == "KeyF" ){
+        fSound.play();
+
+      } else if( e.code == "KeyG" ){
+        gSound.play();
+
+      } else if( e.code == "KeyH" ){
+        hSound.play();
+
+      } else if( e.code == "KeyZ" ){
+        zSound.play();
+
+      } else if( e.code == "KeyX" ){
+        xSound.play();
+
+      } else if( e.code == "KeyC" ){
+        cSound.play();
+
+      } else if( e.code == "KeyV" ){
+        vSound.play();
+
+      } else if( e.code == "KeyB" ){
+        bSound.play();
+
+      } else if( e.code == "KeyN" ){
+        nSound.play();
+
+      } else {
+
+      }
+
+      if ( e.code == "KeyQ"){
+        
+
+      } else if( e.code == "KeyW" ){
+        wSound.play();
+
+      } else if( e.code == "KeyE" ){
+        eSound.play();
+
+      } else if( e.code == "KeyR" ){
+        rSound.play();
+
+      } else if( e.code == "KeyT" ){
+        tSound.play();
+
+      } else if( e.code == "KeyY" ){
+        ySound.play();
+
+      } else if( e.code == "KeyA" ){
+        aSound.play();
+
+      } else if( e.code == "KeyS" ){
+        sSound.play();
+
+      } else if( e.code == "KeyD" ){
+        dSound.play();
+
+      } else if( e.code == "KeyF" ){
+        fSound.play();
+
+      } else if( e.code == "KeyG" ){
+        gSound.play();
+
+      } else if( e.code == "KeyH" ){
+        hSound.play();
+
+      } else if( e.code == "KeyZ" ){
+        zSound.play();
+
+      } else if( e.code == "KeyX" ){
+        xSound.play();
+
+      } else if( e.code == "KeyC" ){
+        cSound.play();
+
+      } else if( e.code == "KeyV" ){
+        vSound.play();
+
+      } else if( e.code == "KeyB" ){
+        bSound.play();
+
+      } else if( e.code == "KeyN" ){
+        nSound.play();
+
+      } else {
+
+      }
+
+      
+
+      }
+    
+  </script>
+
+
+  <body>
+    <div class="center">
+      <div>
+        <div>
+          <input type="text" size="33" />
+        </div>
+
+        <div>
+          <button id = "Q" onclick="qSound.play();" onmousedown="qChange()" onmouseup="qChange2()">
+            q
+          </button>
+          <button id = "W" onclick="wSound.play();" onmousedown="wChange()" onmouseup="wChange2()">
+            w
+          </button>
+          <button id = "E" onclick="eSound.play();" onmousedown="eChange()" onmouseup="eChange2()">
+            e
+          </button>
+          <button id = "R" onclick="rSound.play();" onmousedown="rChange()" onmouseup="rChange2()">
+            r
+          </button>
+          <button id = "T" onclick="tSound.play();" onmousedown="tChange()" onmouseup="tChange2()">
+            t
+          </button>
+          <button id = "Y" onclick="ySound.play();" onmousedown="yChange()" onmouseup="yChange2()">
+            y
+          </button>
+        </div>
+        <div>
+          <button id = "A" onclick="aSound.play();" onmousedown="aChange()" onmouseup="aChange2()">
+            a
+          </button>
+          <button id = "S" onclick="sSound.play();" onmousedown="sChange()" onmouseup="sChange2()">
+            s
+          </button>
+          <button id = "D" onclick="dSound.play();" onmousedown="dChange()" onmouseup="dChange2()">
+            d
+          </button>
+          <button id = "F" onclick="fSound.play();" onmousedown="fChange()" onmouseup="fChange2()">
+            f
+          </button>
+          <button id = "G" onclick="gSound.play();" onmousedown="gChange()" onmouseup="gChange2()">
+            g
+          </button>
+          <button id = "H" onclick="hSound.play();" onmousedown="hChange()" onmouseup="hChange2()">
+            h
+          </button>
+        </div>
+        <div>
+          <button id = "Z" onclick="zSound.play();" onmousedown="zChange()" onmouseup="zChange2()">
+            z
+          </button>
+          <button id = "X" onclick="xSound.play();" onmousedown="xChange()" onmouseup="xChange2()">
+            x
+          </button>
+          <button id = "C" onclick="cSound.play();" onmousedown="cChange()" onmouseup="cChange2()">
+            c
+          </button>
+          <button id = "V" onclick="vSound.play();" onmousedown="vChange()" onmouseup="vChange2()">
+            v
+          </button>
+          <button id = "B" onclick="bSound.play();" onmousedown="bChange()" onmouseup="bChange2()">
+            b
+          </button>
+          <button id = "N" onclick="nSound.play();" onmousedown="nChange()" onmouseup="nChange2()">
+            n
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
